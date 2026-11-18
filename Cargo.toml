@@ -1,0 +1,13 @@
+[package]
+name = "box_blocks"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+turubai = { path = "../turubai/turubai", features = ["web"] }
+turubai_macros = { path = "../turubai/turubai_macros" }
+mercy = { path  = "../mercy" }
+wasm-bindgen = "0.2.118"
